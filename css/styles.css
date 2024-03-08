@@ -13,6 +13,7 @@ header {
     align-items: center;
     height: 100px;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 header img {
@@ -125,6 +126,41 @@ main {
     font-size: 2em;
 }
 
+
+.espacios > div {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 5px; 
+    transition: border 0.3s; 
+}
+
+
+.espacios > div:hover {
+    border-color: #0d25ad; 
+}
+
+#carouselSection {
+    display: inline-flex;
+
+    overflow: hidden; 
+}
+
+.carousel-inner {
+    max-height: 100%; 
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    margin-bottom: 0;
+}
+
+#carouselSection.carousel.slide {
+    max-width: 80%;
+    max-height: 80%;
+    min-width: 80%;
+    min-height: 80%;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -219,4 +255,52 @@ footer div img {
 
 footer span {
     margin-top: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        padding-top: 150px;
+    }
+
+    #carouselExample {
+        display: block; 
+    }
+    .carousel-item .col-lg-3 {
+        max-width: 50%; 
+    }
+
+    .grilla-libreria {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6, 300px);
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img3"
+        "img4 img3"
+        "img4 img5"
+        "img6 img6"
+        "img7 img8";
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    main section {
+        display: flow;
+    }
+
+    .grilla-libreria {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-template-rows: repeat(8, 300px); /* Ajusta el número de filas según tus necesidades */
+    justify-content: center;
+    grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8";
+    }
 }

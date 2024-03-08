@@ -41,33 +41,50 @@
     </header>
 
     <main>
-       <section class="espacios img">
+        <section id="carouselSection" class="carousel slide" data-bs-ride="carousel">
             <h1>NOVEDADES</h1>
-            <div>
-                <img src="./img/libro-ciudad-medialuna.jpg" alt="Ciudad Medialuna">
-                <p>Ciudad Medialuna</p>
-                <p>Sarah J. Mass</p>
-                <p>99.99$</p>
-
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-ciudad-medialuna.jpg" alt="Ciudad Medialuna" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-hijos-de-virtud-y-venganza.jpg" alt="Hijos de virtud y venganza" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-princesa-de-cenizas.jpg" alt="Princesa de cenizas" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-ciudad-media-luna-3.jpg" alt="Ciudad Medialuna 3" class="d-block w-100 img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                         <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-reino-de-ladrones.jpg" alt="Reino de ladrones" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/la-bruja-blanca-asesino-de-brujas-shelby-mahurin-portada.jpg" alt="Asesino de brujas" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-casa-de-cielo-y-aliento.webp" alt="Casa de cielo y aliento" class="d-block w-100 img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mx-auto d-flex align-items-center">
+                            <img src="./img/libro-hijos-de-angustia-y-anarquia.jpg" alt="Hijos de angustia y anarquia" class="d-block w-100 img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="./img/libro-hijos-de-virtud-y-venganza.jpg" alt="Hijos de virtud y venganza">
-                <p>Hijos de virtud y venganza</p>
-                <p>Tomi Adeyemi</p>
-                <p>99.99$</p>
-            </div>
-            <div>
-                <img src="./img/libro-la-rueda-del-tiempo.jpg" alt="La rueda del tiempo">
-                <p>La rueda del tiempo</p>
-                <p>Robert Jordan</p>
-                <p>99.99$</p>
-            </div>
-            <div>
-                <img src="./img/libro-divergente.jpg" alt="Divergente">
-                <p>Divergente</p>
-                <p>Veronica Roth</p>
-                <p>99.99$</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSection" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSection" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
 
         <section class="espacios img">
@@ -122,15 +139,15 @@
     </main>
 
     <footer>
-        <span>Seguinos en nuestras redes</span>
+        <p>Seguinos en nuestras redes</p>
         <div>
-            <a href="http://www.instagram.com"><img src="./img/logo-instagram.png" alt="Logo Instagram"></a>
+            <a href="http://www.instagram.com"><img src="./img/logo-instagram.png" alt="Logo Instagram" target="_blank"></a>
         </div>
         <div>
-            <a href="https://www.facebook.com"><img src="./img/logo-facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.facebook.com"><img src="./img/logo-facebook.png" alt="Logo Facebook" target="_blank"></a>
         </div>
         <div>
-            <a href="http://www.twitter.com"><img src="./img/logo-twitter.jpg" alt="Logo Twitter"></a>
+            <a href="http://www.twitter.com"><img src="./img/logo-twitter.jpg" alt="Logo Twitter" target="_blank"></a>
         </div>
         
     </footer>
