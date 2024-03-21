@@ -1,0 +1,56 @@
+/*Medida adaptada a las de bootstrap*/
+@media screen and (max-width: 991px) {
+    header {
+        .navbar-collapse {
+            padding-top: 150px;
+        }
+    }
+
+    .main-index {
+        #carouselExample {
+            display: block; 
+        }
+        .carousel-item .col-lg-3 {
+            max-width: 50%; 
+        }
+    }
+
+    .main-nosotros {
+
+        .grilla-libreria {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6, 300px);
+            grid-template-areas: 
+            "img1 img1"
+            "img2 img3"
+            "img4 img3"
+            "img4 img5"
+            "img6 img6"
+            "img7 img8";
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        display: flow;
+    }
+
+    .main-nosotros {
+        .grilla-libreria {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 300px);
+            justify-content: center;
+            grid-template-areas: 
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"; 
+        }
+    }
+}

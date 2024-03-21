@@ -1,10 +1,6 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
+
+/*header {
     background: rgb(8, 184, 238);
     width: 100%;
     position: sticky;
@@ -20,8 +16,10 @@ header img {
     max-width: 125px;
     height: auto;
     margin-right: auto;
-}
-nav {
+}*/
+
+
+/* nav {
     display: flex;
     justify-content: flex-end;
 }
@@ -50,84 +48,88 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 
-}
+} */
 
-nav ul li:hover {
+/* nav ul li:hover {
     background: #118bc0;
-}
+} */
 
-.navbar-toggler {
+/* .navbar-toggler {
     color: #fff;
-}
+} */
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-color: #fff;
-}
+} */
 /*Modificacion de los estilos navbar de bootstrap*/
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
     font-size: 30px; 
     word-spacing: 10px;
     color: #fff;
-}
+} */
 
 
-.navbar-collapse {
+/* .navbar-collapse {
     background-color: rgb(8, 184, 238);
     
-}
+} */
 
-body{
+/* body{
     font-family: cursive;
     background-image: url(./../img/fondo.webp);
     background-size: cover;
     background-position: center;
-}
+} */
 
-main section {
+/* main {
+    text-align: center;
+} */
+
+/* main section {
     display: flex; 
     flex-wrap: wrap;
-}
+} */
 
-main section > h1, main section > h2 {
+/* main section > h1, main section > h2 {
     flex: 1 0 100%; 
     text-align: center; 
     margin-bottom: 20px;
-}
-main section div {
+} */
+/* main section div {
     flex: 1 0 15%;
     margin: 5px;  
     text-align: center; 
-}
-
-main {
-    text-align: center;
-}
-
-.contenedor {
+} */
+/* clase usada en autores y generos */
+/* .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
+} */
 
-.espacios {
+/* clase usada en generos */
+/* .espacios {
     flex: 0 0 calc(33.33% - 20px);
     margin-bottom: 20px;
 }
+
+clase usada en Index
 
 .espacios img {
     max-width: 50%;
     max-height: 70%;
     min-width: 50%;
     min-height: 70%;
-}
+} */
 
-.tamano {
+/* clase usada en genero */
+/* .tamano {
     font-size: 2em;
-}
+} */
 
 
-.espacios > div {
+/* .espacios > div {
     border: 1px solid #ccc; 
     padding: 10px; 
     margin: 5px; 
@@ -137,11 +139,10 @@ main {
 
 .espacios > div:hover {
     border-color: #0d25ad; 
-}
+} */
 
-#carouselSection {
+/* #carouselSection {
     display: inline-flex;
-
     overflow: hidden; 
 }
 
@@ -159,9 +160,9 @@ main {
     max-height: 80%;
     min-width: 80%;
     min-height: 80%;
-}
+} */
 
-form {
+/* form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -172,28 +173,28 @@ label {
     display: inline-block;
     width: 150px;
     font-weight: bold;
-}
+} */
 
 /*Boostrap en el form*/
 /*Cambio en los estilos de letra*/
-.form-label, .form-control {
+/* .form-label, .form-control {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 
 /*Cambio en los estilos del input*/
-.form-control {
+/* .form-control {
     border-radius: 50px;
-}
+} */
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+} */
 
-.grilla-libreria {
+/* .grilla-libreria {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2, 300px);
@@ -237,10 +238,10 @@ body {
 }
 .img-8 {
     grid-area: img8;
-}
+} */
 
 
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -255,9 +256,9 @@ footer div img {
 
 footer span {
     margin-top: 15px;
-}
+} */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .navbar-collapse {
         padding-top: 150px;
     }
@@ -281,17 +282,17 @@ footer span {
         "img7 img8";
     }
 
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) { */
 
-    main section {
+    /* main section {
         display: flow;
-    }
+    } */
 
-    .grilla-libreria {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-    grid-template-rows: repeat(8, 300px); /* Ajusta el número de filas según tus necesidades */
+    /* .grilla-libreria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 300px);
     justify-content: center;
     grid-template-areas: 
         "img1"
@@ -303,4 +304,4 @@ footer span {
         "img7"
         "img8";
     }
-}
+} */

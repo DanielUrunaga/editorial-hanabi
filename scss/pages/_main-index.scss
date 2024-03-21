@@ -1,0 +1,25 @@
+/*Main index*/
+.main-index {
+    #carouselSection {
+        display: inline-flex;
+        overflow: hidden; 
+
+        &.carousel.slide {
+            max-width: 80%;
+            max-height: 80%;
+            min-width: 80%;
+            min-height: 80%;
+        }
+    }
+
+    .carousel-inner {
+        max-height: 100%; 
+    }
+
+    .carousel-item img {
+        object-fit: cover; 
+        margin-bottom: 0;
+    }
+}
+
+
