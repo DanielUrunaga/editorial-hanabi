@@ -1,6 +1,6 @@
 /*Estilos globales*/
 body{
-    font-family: cursive;
+    font-family: $font-family;
     background-image: url(./../img/fondo.webp);
     background-size: cover;
     background-position: center;
@@ -34,9 +34,12 @@ main {
 
 /* clase usada en autores y generos */
 .contenedor {
-    display: flex;
+
+    @include flex (normal, center);
+    // display: flex;
+    // align-items: normal;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     gap: 20px;
 }
 
@@ -59,7 +62,7 @@ main {
     }
 
     > div:hover {
-        border-color: #0d25ad; 
+        border-color: $color-borde; 
     }
 }
 

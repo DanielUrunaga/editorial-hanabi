@@ -5,11 +5,12 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    display: flex;
-    align-items: center;
+    @include flex (center, space-between);
+    // display: flex;
+    // align-items: center;
     height: 100px;
-    justify-content: space-between;
-    z-index: 1000;
+    // justify-content: space-between;
+    z-index: $z-index-header;
 
     img {
         max-width: 125px;
@@ -18,8 +19,10 @@ header {
     }
 
     nav {
-        display: flex;
-        justify-content: flex-end;
+
+        @include flex (center, flex-end);
+        // display: flex;
+        // justify-content: flex-end;
 
         ul {
             list-style: none;
@@ -42,7 +45,7 @@ header {
                     display: flex; 
                     align-items: center;
                     padding: 20px;
-                    color: #fff;
+                    color: $color-nav;
                     text-decoration: none;
                 }
             }
@@ -50,14 +53,15 @@ header {
     }
 
     .navbar-toggler {
-        color: #fff;
+        @extend %estilos-boton;
+        color: rgb(10, 148, 202);
     }
     
     .navbar-nav {
         .nav-link {
             font-size: 30px;
             word-spacing: 10px;
-            color: #fff;
+            color: $color-nav;
         }
     }
     

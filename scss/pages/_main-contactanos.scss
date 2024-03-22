@@ -3,6 +3,7 @@
     form {
         max-width: 600px;
         margin: 0 auto;
+        padding: 10px;
 
         div {
             margin-bottom: 1rem;
@@ -20,6 +21,11 @@
 
         .form-label, .form-control {
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button {
+            @extend %estilos-boton;
+            border-color: rgb(13, 28, 32);
         }
     }
 }
