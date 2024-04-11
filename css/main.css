@@ -214,6 +214,36 @@ main section div {
   grid-area: img8;
 }
 
+/*Main autores*/
+.main-autores div .espaciosA {
+  position: relative;
+}
+.main-autores div .espaciosA img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.main-autores div .espaciosA p {
+  margin-top: 10px;
+}
+.main-autores div .espaciosA:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+.main-autores div .espaciosA .titulosA {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.main-autores div .espaciosA:hover .titulosA {
+  display: block;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -282,8 +312,11 @@ footer p {
     margin-right: auto;
     margin-left: auto;
   }
+  .espacios img {
+    max-height: 300px;
+  }
   main section {
-    display: flow;
+    display: flex;
   }
   .main-nosotros .grilla-libreria {
     grid-template-columns: 1fr;

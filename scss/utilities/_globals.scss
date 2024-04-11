@@ -36,10 +36,7 @@ main {
 .contenedor {
 
     @include flex (normal, center);
-    // display: flex;
-    // align-items: normal;
     flex-wrap: wrap;
-    // justify-content: center;
     gap: 20px;
 }
 

@@ -80,8 +80,12 @@
         margin-left: auto;
     }
 
+    .espacios img {
+        max-height: 300px;
+    }
+
     main section {
-        display: flow;
+        display: flex;
     }
 
     .main-nosotros {

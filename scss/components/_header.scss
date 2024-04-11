@@ -6,10 +6,7 @@ header {
     position: sticky;
     top: 0;
     @include flex (center, space-between);
-    // display: flex;
-    // align-items: center;
     height: 100px;
-    // justify-content: space-between;
     z-index: $z-index-header;
 
     img {
@@ -21,8 +18,6 @@ header {
     nav {
 
         @include flex (center, flex-end);
-        // display: flex;
-        // justify-content: flex-end;
 
         ul {
             list-style: none;
